@@ -29,4 +29,7 @@ GitHub：https://github.com/cao-zha/wx-qrcode
 
 ### 界面预览
 
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0505/143406_77735587_7397417.jpeg "1") &ensp; 
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0505/143419_b2d2d1ae_7397417.jpeg "2")
+
 
