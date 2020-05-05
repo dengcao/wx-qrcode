@@ -1,0 +1,65 @@
+/* pages/index/index.wxss */
+.ipimg{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  margin: 20rpx auto;
+}
+.root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ip-input {
+    border: 1px solid gainsboro;
+    margin-left: 50rpx;
+    margin-right: 50rpx;
+    height: 120rpx;
+    font-size: 35rpx;
+    width: 80%;
+}
+
+.query-button {
+    margin-top: 30rpx;
+}
+
+.ip-value {
+    margin-top: 50rpx;
+    font-weight: bold;
+}
+
+.location {
+    margin-top: 30rpx;
+    word-break:break-all;
+  word-wrap:break-word;
+  text-align: center;
+}
+.jieguo{font-size: 35rpx;text-align: left;width: 90%;}
+
+.radio-group{
+  margin: 18px auto 12px auto;
+}
+.chooseImage{
+  margin: 0;
+  float: left;
+  padding: 0 15rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.logoQRCode {
+  background-color: #6495ED;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.copybtn{margin-top: 20rpx;}
+.list{margin: 12rpx auto;}
+.list .l-left{float: left;height: 60rpx;}
+.list .ip-input{width: 250rpx;float: left;height: 60rpx;margin:0;}

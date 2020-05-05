@@ -1,0 +1,24 @@
+<!--pages/index/index.wxml-->
+<view style="text-align:center;margin-top:100rpx;"> </view>
+<view class="root">
+    <textarea class="ip-input" bindinput="qrcode_Value" maxlength="1850" placeholder="输入二维码内容，如网址、文本等" />
+    <view class="list"><view class="l-left">背景颜色：</view><input class="ip-input" bindinput="qrcode_background" value="#FFFFFF" placeholder="如：#FFFFFF" /></view>
+    <view class="list" style='font-size: 28rpx;color:#999999;' wx:if='{{background_tips}}'>（注意：背景颜色太深可能会导致二维码失效。）</view>
+    <view class="list"><view class="l-left">前景色：</view><input class="ip-input" value="#000000" bindinput="qrcode_foreground" placeholder="如：#000000" /></view>
+    <view class="list"><view class="l-left">插入LOGO：</view> 
+<button class='chooseImage' hidden="{{logo_url}}" catchtap='upload'>选择图片</button> <button class='chooseImage' bindtap='delLogo' wx:if="{{logo_url}}">已插入，删除</button>
+</view>
+    <button type="primary" class="query-button" bindtap="queryIp">生成二维码</button>
+    <view class="jieguo" wx:if="{{is_complete==1}}">
+    <view class="ip-value">生成二维码完成：</view>
+    <view class="location">
+   
+      <canvas style="width: 550rpx;height: 550rpx;margin:auto;" canvas-id="logoQRCode" />
+  <button type="primary" size="mini" class="copybtn" bindtap="saveShareImg">保存到手机</button>
+
+    </view>
+    </view>
+</view>
+<view class="banquan">
+    <text class="bq" bindtap="banquan">©caozha.com 草札</text>
+  </view>
